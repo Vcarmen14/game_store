@@ -1,5 +1,3 @@
-create database VigZone;
-use VigZone;
 
 
 CREATE TABLE usuarios (
@@ -87,13 +85,4 @@ INSERT INTO `juegos` (`id_juego`,`nombre`,`tipo`, `precio`, `marca`, `imagen`) V
 (23, 'NBA 2k21','NUEVO', '899', 'Xbox', 'nba');
 INSERT INTO `juegos` (`id_juego`,`nombre`,`tipo`, `precio`, `marca`, `imagen`) VALUES
 (24, 'BATTLEFIELD 2042','NUEVO', '1999', 'Xbox', 'battle');
-
-CREATE TABLE IF NOT EXISTS carro (
-  id_juego int(10) primary key not null unique auto_increment,
-  nombre varchar(40) NOT NULL,
-  cantidad varchar (20) NOT NULL,
-  precio int(10) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
-
 
